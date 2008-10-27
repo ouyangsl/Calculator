@@ -21,6 +21,7 @@ import android.view.KeyEvent;
 import android.widget.Button;
 import android.widget.EditText;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 
 import org.javia.arity.Symbols;
@@ -33,6 +34,7 @@ class Logic {
     private History mHistory;
     private String  mResult = "";
     private Button mEqualButton;
+    private Intent mReturnResult;
     private final String mEnterString;
     private boolean mIsError = false;
     private final boolean mOrientationPortrait;
@@ -51,7 +53,7 @@ class Logic {
 
     private final String mErrorString;
 
-    Logic(Context context, History history, CalculatorDisplay display, Button equalButton) {
+    Logic(Context context, History history, CalculatorDisplay display, Button equalButton, Intent returnResult) {
         mErrorString = context.getResources().getString(R.string.error);
         mOrientationPortrait = context.getResources().getConfiguration().orientation
             == Configuration.ORIENTATION_PORTRAIT;
@@ -69,6 +71,8 @@ class Logic {
         mDisplay.setLogic(this);
         mEqualButton = equalButton;
         mEnterString = context.getText(R.string.enter).toString();
+        
+        mReturnResult = returnResult;
 
         clearWithHistory(false);
     }
@@ -142,6 +146,7 @@ class Logic {
                 mIsError = true;
                 mResult = mErrorString;
             }
+            mReturnResult.setAction(mResult);
             if (text.equals(mResult)) {
                 //no need to show result, it is exactly what the user entered
                 clearWithHistory(true);

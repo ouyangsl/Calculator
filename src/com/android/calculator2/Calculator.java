@@ -26,6 +26,7 @@ import android.view.Window;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+import android.content.Intent;
 import android.content.res.Configuration;
 
 public class Calculator extends Activity {
@@ -57,8 +58,11 @@ public class Calculator extends Activity {
         mHistory = mPersist.history;
 
         mDisplay = (CalculatorDisplay) findViewById(R.id.display);
-
-        mLogic = new Logic(this, mHistory, mDisplay, (Button) findViewById(R.id.equal));
+        
+        Intent returnResult = new Intent(""); // Result return to calling activity
+        setResult(RESULT_OK, returnResult);
+        
+        mLogic = new Logic(this, mHistory, mDisplay, (Button) findViewById(R.id.equal), returnResult);
         HistoryAdapter historyAdapter = new HistoryAdapter(this, mHistory, mLogic);
         mHistory.setObserver(historyAdapter);
         View view;
