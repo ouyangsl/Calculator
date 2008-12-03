@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "za95646dc09cd81d23ed8c5c6f6bc6e01",
+        "filename": "src/com/android/calculator2/Calculator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1001146
+      },
+      "writtenOn": "2008-12-03T16:11:20Z",
+      "side": 1,
+      "message": "This is a weird way to use intents and intent results. What intent is used to set a result? In this case, any intent would work, no matter what action is set. Also, the result is always OK. What if the user backs out of the activity? The result should probably not be OK in that case.\n\nThe proper way to implement this feature would be to add a new intent filter to Calculator to have a defined way to ask for a computation to be performed. (For instance android.intent.ACTION_COMPUTE.) A result should be set only when the Intent used to start Calculator uses this action. The activity should also finish once the user is done computing something.",
+      "revId": "25518d9ad72aef7c134b02ab82b63ca6ada9ceda",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
