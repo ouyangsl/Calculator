@@ -23,9 +23,6 @@ import android.view.GestureDetector;
 import android.widget.FrameLayout;
 import android.content.Context;
 import android.util.AttributeSet;
-import android.os.Handler;
-
-import java.util.Map;
 
 class PanelSwitcher extends FrameLayout {
     private static final int MAJOR_MOVE = 60;
@@ -33,7 +30,6 @@ class PanelSwitcher extends FrameLayout {
 
     private GestureDetector mGestureDetector;
     private int mCurrentView;
-    private View mChild, mHistoryView;
     private View children[];
 
     private int mWidth;
@@ -43,10 +39,10 @@ class PanelSwitcher extends FrameLayout {
     private TranslateAnimation inRight;
     private TranslateAnimation outRight;
 
-    private static final int NONE  = 1;
-    private static final int LEFT  = 2;
-    private static final int RIGHT = 3;
-    private int mPreviousMove;
+    private enum Direction {
+        LEFT, RIGHT
+    }
+    private Direction mPreviousMove;
 
     public PanelSwitcher(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -110,27 +106,27 @@ class PanelSwitcher extends FrameLayout {
 
     void moveLeft() {
         //  <--
-        if (mCurrentView < children.length - 1 && mPreviousMove != LEFT) {
+        if (mCurrentView < children.length - 1 && mPreviousMove != Direction.LEFT) {
             children[mCurrentView+1].setVisibility(View.VISIBLE);
             children[mCurrentView+1].startAnimation(inLeft);
             children[mCurrentView].startAnimation(outLeft);
             children[mCurrentView].setVisibility(View.GONE);
 
             mCurrentView++;
-            mPreviousMove = LEFT;
+            mPreviousMove = Direction.LEFT;
         }
     }
 
     void moveRight() {
         //  -->
-        if (mCurrentView > 0 && mPreviousMove != RIGHT) {
+        if (mCurrentView > 0 && mPreviousMove != Direction.RIGHT) {
             children[mCurrentView-1].setVisibility(View.VISIBLE);
             children[mCurrentView-1].startAnimation(inRight);
             children[mCurrentView].startAnimation(outRight);
             children[mCurrentView].setVisibility(View.GONE);
 
             mCurrentView--;
-            mPreviousMove = RIGHT;
+            mPreviousMove = Direction.RIGHT;
         }
     }
 
