@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAzH///oc\u003d",
+        "filename": "src/com/android/calculator2/Calculator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1003245
+      },
+      "writtenOn": "2010-05-16T22:56:44Z",
+      "side": 1,
+      "message": "Please do not leave dead code anywhere.",
+      "revId": "ff263d9454c7b46f824db7eab7792993f3d1581b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAzH///oY\u003d",
+        "filename": "src/com/android/calculator2/PanelSwitcher.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1003245
+      },
+      "writtenOn": "2010-05-16T22:56:44Z",
+      "side": 1,
+      "message": "Please read Avoid Enums section at http://developer.android.com/guide/practices/design/performance.html In my opinion it applies here.",
+      "revId": "ff263d9454c7b46f824db7eab7792993f3d1581b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
