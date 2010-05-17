@@ -33,6 +33,24 @@
       "revId": "ff263d9454c7b46f824db7eab7792993f3d1581b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAzH///j4\u003d",
+        "filename": "src/com/android/calculator2/PanelSwitcher.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1001146
+      },
+      "writtenOn": "2010-05-17T18:08:31Z",
+      "side": 1,
+      "message": "Please don\u0027t replace existing flags with enums, there\u0027s no reason to.",
+      "parentUuid": "AAAAzH///oY\u003d",
+      "revId": "ff263d9454c7b46f824db7eab7792993f3d1581b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
