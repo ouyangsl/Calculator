@@ -37,7 +37,7 @@ class CalculatorDisplay extends ViewSwitcher {
     private static final char[] ACCEPTED_CHARS = 
         "0123456789.+-*/\u2212\u00d7\u00f7()!%^".toCharArray();
 
-    private static final int ANIM_DURATION = 500;
+    private static final int ANIM_DURATION = 300;
     enum Scroll { UP, DOWN, NONE }
     
     TranslateAnimation inAnimUp;
