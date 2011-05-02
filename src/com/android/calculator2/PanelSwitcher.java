@@ -26,7 +26,7 @@ import android.util.AttributeSet;
 
 class PanelSwitcher extends FrameLayout {
     private static final int MAJOR_MOVE = 60;
-    private static final int ANIM_DURATION = 400;
+    private static final int ANIM_DURATION = 300;
 
     private GestureDetector mGestureDetector;
     private int mCurrentView;
