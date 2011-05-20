@@ -1,0 +1,11 @@
+Change-Id: Idb5ed56b4c0956409fb2d6f039ca4fe80e2e8805
+Code-Review+2: Dave Sparks <davidsparks@android.com>
+Verified+1: Mihai Preda <preda@android.com>
+Code-Review+1: Pavlo Kasperskyi <pkasperskyi@gmail.com>
+Code-Review+1: Oksana Yaremkevych <masyanya.bug@gmail.com>
+Code-Review+1: Eugene Fotin <udgerr@gmail.com>
+Submitted-by: Mihai Preda <preda@android.com>
+Submitted-at: Wed, 22 Apr 2009 09:16:00 -0700
+Reviewed-on: https://review.source.android.com/9618
+Project: platform/packages/apps/Calculator
+Branch: refs/heads/master
