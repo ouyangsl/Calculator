@@ -33,8 +33,6 @@ class Logic {
     private boolean mIsError = false;
     private int mLineLength = 0;
 
-    private static final String INFINITY_UNICODE = "\u221e";
-
     // the two strings below are the result of Double.toString() for Infinity & NaN
     // they are not output to the user and don't require internationalization
     private static final String INFINITY = "Infinity"; 
@@ -174,11 +172,11 @@ class Logic {
         }
 
         String result = Util.doubleToString(mSymbols.eval(input), mLineLength, ROUND_DIGITS);
-        if (result.equals(NAN)) { // treat NaN as Error
+        if (result.equals(NAN) || result.contains(INFINITY)) { //treat NaN and (-)Infinity as Error
             mIsError = true;
             return mErrorString;
         }
-        return result.replace('-', MINUS).replace(INFINITY, INFINITY_UNICODE);
+        return result.replace('-', MINUS);
     }
 
     static boolean isOperator(String text) {
