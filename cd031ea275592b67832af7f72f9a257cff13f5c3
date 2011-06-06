@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAABB3///Us\u003d",
+        "filename": "src/com/android/calculator2/Logic.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 1000483
+      },
+      "writtenOn": "2011-06-06T16:33:37Z",
+      "side": 1,
+      "message": "The change only makes sense if there\u0027s no other way to generate +/- Infinity from the calculator.  Infinity as a result isn\u0027t an error; the problem is accepting it as the result for divide-by-zero.\n\nAt the very least this needs a comment explaining why we\u0027re treating infinity as error.  Maybe one of the other reviewers has a different solution?",
+      "revId": "cd031ea275592b67832af7f72f9a257cff13f5c3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
