@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a8d1b44_ce22239a",
+        "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2014-11-14T15:52:27Z",
+      "side": 1,
+      "message": "why not findViewById? (i don\u0027t know whether my question even makes sense, but it\u0027s what i\u0027d expected to see.)",
+      "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
