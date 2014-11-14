@@ -17,10 +17,14 @@
 package com.android.calculator2;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
+import android.widget.Button;
 import android.view.View;
 import android.view.ViewGroup;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 /**
  * A layout that places children in an evenly distributed grid based on the specified
@@ -46,7 +50,6 @@ public class CalculatorPadLayout extends ViewGroup {
                 new int[] { android.R.attr.rowCount, android.R.attr.columnCount }, defStyle, 0);
         mRowCount = a.getInt(0, 1);
         mColumnCount = a.getInt(1, 1);
-
         a.recycle();
     }
 
@@ -118,3 +121,4 @@ public class CalculatorPadLayout extends ViewGroup {
         return p instanceof MarginLayoutParams;
     }
 }
+
