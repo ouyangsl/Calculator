@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa313b2_e5db7c9f",
+        "filename": "src/com/android/calculator2/CalculatorExpressionTokenizer.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2014-11-14T15:50:27Z",
+      "side": 1,
+      "message": "do you need to be this explicit? i know in theory this can be different from the system Locale but...",
+      "revId": "d7c61534f376c33ae87ca3d3ec26b3244d17613a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
