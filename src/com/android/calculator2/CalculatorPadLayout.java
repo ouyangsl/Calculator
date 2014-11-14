@@ -17,10 +17,15 @@
 package com.android.calculator2;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.widget.Button;
 import android.view.View;
 import android.view.ViewGroup;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 /**
  * A layout that places children in an evenly distributed grid based on the specified
@@ -46,8 +51,41 @@ public class CalculatorPadLayout extends ViewGroup {
                 new int[] { android.R.attr.rowCount, android.R.attr.columnCount }, defStyle, 0);
         mRowCount = a.getInt(0, 1);
         mColumnCount = a.getInt(1, 1);
-
         a.recycle();
+    }
+
+    @Override
+    public void onFinishInflate() {
+        super.onFinishInflate();
+        final NumberFormat nf = DecimalFormat.getInstance(getResources().getConfiguration().locale);
+
+        for (int childIndex = 0; childIndex < getChildCount(); ++childIndex) {
+            final View v = getChildAt(childIndex);
+            if (v instanceof Button) {
+                Button b = (Button) v;
+                if (b.getId() == R.id.digit_0) {
+                    b.setText(nf.format(0));
+                } else if (b.getId() == R.id.digit_1) {
+                    b.setText(nf.format(1));
+                } else if (b.getId() == R.id.digit_2) {
+                    b.setText(nf.format(2));
+                } else if (b.getId() == R.id.digit_3) {
+                    b.setText(nf.format(3));
+                } else if (b.getId() == R.id.digit_4) {
+                    b.setText(nf.format(4));
+                } else if (b.getId() == R.id.digit_5) {
+                    b.setText(nf.format(5));
+                } else if (b.getId() == R.id.digit_6) {
+                    b.setText(nf.format(6));
+                } else if (b.getId() == R.id.digit_7) {
+                    b.setText(nf.format(7));
+                } else if (b.getId() == R.id.digit_8) {
+                    b.setText(nf.format(8));
+                } else if (b.getId() == R.id.digit_9) {
+                    b.setText(nf.format(9));
+                }
+            }
+        }
     }
 
     @Override
@@ -118,3 +156,4 @@ public class CalculatorPadLayout extends ViewGroup {
         return p instanceof MarginLayoutParams;
     }
 }
+
