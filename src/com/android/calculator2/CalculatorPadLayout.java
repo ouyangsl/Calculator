@@ -17,10 +17,14 @@
 package com.android.calculator2;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
+import android.widget.Button;
 import android.view.View;
 import android.view.ViewGroup;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 /**
  * A layout that places children in an evenly distributed grid based on the specified
@@ -30,6 +34,7 @@ public class CalculatorPadLayout extends ViewGroup {
 
     private int mRowCount;
     private int mColumnCount;
+    private final Resources mResources;
 
     public CalculatorPadLayout(Context context) {
         this(context, null);
@@ -46,8 +51,26 @@ public class CalculatorPadLayout extends ViewGroup {
                 new int[] { android.R.attr.rowCount, android.R.attr.columnCount }, defStyle, 0);
         mRowCount = a.getInt(0, 1);
         mColumnCount = a.getInt(1, 1);
+        mResources = context.getResources();
 
         a.recycle();
+    }
+
+    @Override
+    public void onFinishInflate() {
+        super.onFinishInflate();
+        final NumberFormat nf = DecimalFormat.getInstance(mResources.getConfiguration().locale);
+
+        ((Button) findViewById(R.id.digit_0)).setText(nf.format(0));
+        ((Button) findViewById(R.id.digit_1)).setText(nf.format(1));
+        ((Button) findViewById(R.id.digit_2)).setText(nf.format(2));
+        ((Button) findViewById(R.id.digit_3)).setText(nf.format(3));
+        ((Button) findViewById(R.id.digit_4)).setText(nf.format(4));
+        ((Button) findViewById(R.id.digit_5)).setText(nf.format(5));
+        ((Button) findViewById(R.id.digit_6)).setText(nf.format(6));
+        ((Button) findViewById(R.id.digit_7)).setText(nf.format(7));
+        ((Button) findViewById(R.id.digit_8)).setText(nf.format(8));
+        ((Button) findViewById(R.id.digit_9)).setText(nf.format(9));
     }
 
     @Override
@@ -74,6 +97,8 @@ public class CalculatorPadLayout extends ViewGroup {
             if (childView.getVisibility() == View.GONE) {
                 continue;
             }
+
+            if (childView.getId() == R.id.digi)
 
             final MarginLayoutParams lp = (MarginLayoutParams) childView.getLayoutParams();
 
@@ -118,3 +143,4 @@ public class CalculatorPadLayout extends ViewGroup {
         return p instanceof MarginLayoutParams;
     }
 }
+
