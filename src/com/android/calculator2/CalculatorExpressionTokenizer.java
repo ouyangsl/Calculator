@@ -18,6 +18,8 @@ package com.android.calculator2;
 
 import android.content.Context;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -29,18 +31,14 @@ public class CalculatorExpressionTokenizer {
     public CalculatorExpressionTokenizer(Context context) {
         mReplacementMap = new HashMap<>();
 
+        NumberFormat nf = DecimalFormat.getInstance(
+                context.getResources().getConfiguration().locale);
+
         mReplacementMap.put(".", context.getString(R.string.dec_point));
 
-        mReplacementMap.put("0", context.getString(R.string.digit_0));
-        mReplacementMap.put("1", context.getString(R.string.digit_1));
-        mReplacementMap.put("2", context.getString(R.string.digit_2));
-        mReplacementMap.put("3", context.getString(R.string.digit_3));
-        mReplacementMap.put("4", context.getString(R.string.digit_4));
-        mReplacementMap.put("5", context.getString(R.string.digit_5));
-        mReplacementMap.put("6", context.getString(R.string.digit_6));
-        mReplacementMap.put("7", context.getString(R.string.digit_7));
-        mReplacementMap.put("8", context.getString(R.string.digit_8));
-        mReplacementMap.put("9", context.getString(R.string.digit_9));
+        for (int i = 0; i <= 9; ++i) {
+            mReplacementMap.put(String.valueOf(i), nf.format(i));
+        }
 
         mReplacementMap.put("/", context.getString(R.string.op_div));
         mReplacementMap.put("*", context.getString(R.string.op_mul));
