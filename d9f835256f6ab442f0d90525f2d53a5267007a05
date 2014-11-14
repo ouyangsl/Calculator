@@ -16,6 +16,24 @@
       "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ae6dfff_04207c8f",
+        "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2014-11-14T15:54:44Z",
+      "side": 1,
+      "message": "this is slightly quicker. i want only direct children and findviewbyid is O(num children) for viewgroups",
+      "parentUuid": "7a8d1b44_ce22239a",
+      "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
