@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "6394aac1_db9ef3e1",
+        "filename": "res/layout/pad_numeric.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-10T10:39:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a972356_72d67085",
+      "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa82eb17_edee0196",
         "filename": "src/com/android/calculator2/CalculatorExpressionTokenizer.java",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2014-11-14T19:45:24Z",
       "side": 1,
       "message": "Should be final",
+      "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a38a229d_3d326fa1",
+        "filename": "src/com/android/calculator2/CalculatorExpressionTokenizer.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-10T10:39:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa82eb17_edee0196",
       "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "a38a229d_fd5567a6",
+        "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-10T10:39:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a941f50_ae04f73b",
+      "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a8d1b44_22465681",
         "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
         "patchSetId": 4
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "e3617abc_f726606b",
+        "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-10T10:39:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a8d1b44_22465681",
+      "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a8d1b44_420a8215",
         "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
         "patchSetId": 4
@@ -81,6 +153,24 @@
       "writtenOn": "2014-11-14T19:45:24Z",
       "side": 1,
       "message": "nit: spacing, should be newline after super.onFinishInflate();, but not necessary to have newline before for loop.",
+      "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6394aac1_1b169bd1",
+        "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-10T10:39:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a8d1b44_420a8215",
       "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -140,6 +230,24 @@
     },
     {
       "key": {
+        "uuid": "a38a229d_1d6bf363",
+        "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-10T10:39:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a8d1b44_42a7e2c7",
+      "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa82eb17_4d8c6dc7",
         "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
         "patchSetId": 4
@@ -157,6 +265,24 @@
     },
     {
       "key": {
+        "uuid": "e3617abc_170cb4ec",
+        "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-10T10:39:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa82eb17_4d8c6dc7",
+      "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a8d1b44_a2b406c7",
         "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
         "patchSetId": 4
@@ -168,6 +294,24 @@
       "writtenOn": "2014-11-14T19:45:24Z",
       "side": 1,
       "message": "Should be switch statement, e.g.\nswitch(b.getId()) {\n    case R.id.digit_0:\n    ...\n}",
+      "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6394aac1_3b1357e2",
+        "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-10T10:39:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a8d1b44_a2b406c7",
       "revId": "d9f835256f6ab442f0d90525f2d53a5267007a05",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
