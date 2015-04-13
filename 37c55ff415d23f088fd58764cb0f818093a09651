@@ -16,6 +16,24 @@
       "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f0f4e242_3fa0c718",
+        "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-13T10:42:41Z",
+      "side": 1,
+      "message": "i was too lazy to modify my intellij project, so i used vi.",
+      "parentUuid": "83999efb_02738e97",
+      "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
