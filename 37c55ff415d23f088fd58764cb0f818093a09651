@@ -2,6 +2,74 @@
   "comments": [
     {
       "key": {
+        "uuid": "d0299e86_2ba3e3ad",
+        "filename": "src/com/android/calculator2/CalculatorExpressionTokenizer.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1048480
+      },
+      "writtenOn": "2015-04-14T17:49:56Z",
+      "side": 1,
+      "message": "nit: unnecessary parens around \"new Locale.Builder()\"",
+      "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b0242aae_dda54005",
+        "filename": "src/com/android/calculator2/CalculatorExpressionTokenizer.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1048480
+      },
+      "writtenOn": "2015-04-14T17:49:56Z",
+      "side": 1,
+      "message": "Don\u0027t need the number format since we\u0027re already using the DecimalFormatSymbols directly.\n\ni.e. you can just do\n\nfinal DecimalFormatSymbols symbols \u003d new DecimalFormatSymbols(locale);\nfinal char zeroDigit \u003d symbols.getZeroDigit();\n\nfor (int i \u003d 0; i \u003c\u003d 9; ++i) {\n     mReplacementMap.put(String.valueOf(i),\n                    String.valueOf((char) (zeroDigit + i));\n}",
+      "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9033a6f4_27c43abe",
+        "filename": "src/com/android/calculator2/CalculatorNumericPadLayout.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1048480
+      },
+      "writtenOn": "2015-04-14T17:49:56Z",
+      "side": 1,
+      "message": "This config is better done via an xml resource, not hardcoded.\n\ne.g. values-fa/config.xml:\n\n\u003cresources\u003e\n\n    \u003cbool name\u003d\"use_localized_digits\"\u003etrue\u003c/bool\u003e\n\n\u003c/resources\u003e\n\nvalues/config.xml:\n\n\u003cresources\u003e\n\n    \u003cbool name\u003d\"use_localized_digits\"\u003efalse\u003c/bool\u003e\n\n\u003c/resources\u003e\n\nif (!context.getResources().getBoolean(R.bool.use_localized_digits)) {\n    locale \u003d new Locale.Builder()\n                .setLocale(locale)\n                .setUnicodeLocaleKeyword(\"nu\", \"latn\")\n                .build();\n}",
+      "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9033a6f4_e72cf243",
+        "filename": "src/com/android/calculator2/CalculatorNumericPadLayout.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1048480
+      },
+      "writtenOn": "2015-04-14T17:49:56Z",
+      "side": 1,
+      "message": "nit: use getZeroDigit instead since already using DecimalFormatSymbols directly.",
+      "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "83999efb_02738e97",
         "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
         "patchSetId": 5
@@ -31,6 +99,24 @@
       "side": 1,
       "message": "i was too lazy to modify my intellij project, so i used vi.",
       "parentUuid": "83999efb_02738e97",
+      "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b0242aae_1d7508f4",
+        "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1048480
+      },
+      "writtenOn": "2015-04-14T17:49:56Z",
+      "side": 1,
+      "message": "Please reset changes to this file.",
+      "parentUuid": "f0f4e242_3fa0c718",
       "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
