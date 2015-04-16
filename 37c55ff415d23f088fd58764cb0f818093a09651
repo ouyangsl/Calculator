@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "90a1e660_70c3f83c",
+        "filename": "src/com/android/calculator2/CalculatorExpressionTokenizer.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-16T10:10:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d0299e86_2ba3e3ad",
+      "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b0242aae_dda54005",
         "filename": "src/com/android/calculator2/CalculatorExpressionTokenizer.java",
         "patchSetId": 5
@@ -30,6 +48,24 @@
       "writtenOn": "2015-04-14T17:49:56Z",
       "side": 1,
       "message": "Don\u0027t need the number format since we\u0027re already using the DecimalFormatSymbols directly.\n\ni.e. you can just do\n\nfinal DecimalFormatSymbols symbols \u003d new DecimalFormatSymbols(locale);\nfinal char zeroDigit \u003d symbols.getZeroDigit();\n\nfor (int i \u003d 0; i \u003c\u003d 9; ++i) {\n     mReplacementMap.put(String.valueOf(i),\n                    String.valueOf((char) (zeroDigit + i));\n}",
+      "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "709c722a_0f0cd5ee",
+        "filename": "src/com/android/calculator2/CalculatorExpressionTokenizer.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-16T10:10:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b0242aae_dda54005",
       "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "90a1e660_d0220c9d",
+        "filename": "src/com/android/calculator2/CalculatorNumericPadLayout.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-16T10:10:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9033a6f4_27c43abe",
+      "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9033a6f4_e72cf243",
         "filename": "src/com/android/calculator2/CalculatorNumericPadLayout.java",
         "patchSetId": 5
@@ -64,6 +118,24 @@
       "writtenOn": "2015-04-14T17:49:56Z",
       "side": 1,
       "message": "nit: use getZeroDigit instead since already using DecimalFormatSymbols directly.",
+      "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b0926a12_6ce00314",
+        "filename": "src/com/android/calculator2/CalculatorNumericPadLayout.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-16T10:10:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9033a6f4_e72cf243",
       "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -117,6 +189,24 @@
       "side": 1,
       "message": "Please reset changes to this file.",
       "parentUuid": "f0f4e242_3fa0c718",
+      "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "709c722a_af184129",
+        "filename": "src/com/android/calculator2/CalculatorPadLayout.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-04-16T10:10:55Z",
+      "side": 1,
+      "message": "hmm, i thought i had already fixed this. will do in the next patchset",
+      "parentUuid": "b0242aae_1d7508f4",
       "revId": "37c55ff415d23f088fd58764cb0f818093a09651",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
